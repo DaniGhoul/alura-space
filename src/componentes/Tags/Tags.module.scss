@@ -1,0 +1,31 @@
+@import "../../styles/variaveis";
+
+.tags {
+  display: flex;
+  align-items: center;
+  color: $cor-do-texto;
+  font-family: $fonte-normal;
+  font-size: 16px;
+  flex-wrap: wrap;  
+
+  p {
+    font-size: 1.25rem;
+    padding-right: 18px;
+  }
+
+  &__lista {
+    list-style: none;
+    gap: 18px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    li {
+      background-color: $tag-color;
+      padding: 6px 10px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  }
+}
